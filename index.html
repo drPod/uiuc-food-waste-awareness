@@ -4,71 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn how UIUC students can reduce food waste in dining halls. Take action with simple tips and see the impact of your choices.">
-    <meta name="keywords" content="UIUC, food waste, dining halls, sustainability, Illinois">
+    <meta name="keywords" content="UIUC, food waste, dining halls, sustainability, Illinois, ReFED">
     <meta name="author" content="UIUC Food Waste Awareness">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Stop Food Waste at UIUC">
-    <meta property="og:description" content="Learn how UIUC students can reduce food waste in dining halls and make a positive impact.">
+    <meta property="og:title" content="Stop Food Waste at UIUC | Dining Hall Sustainability">
+    <meta property="og:description" content="Learn how UIUC students can reduce food waste in dining halls and make a positive impact. Join the movement to reduce waste and protect our environment.">
+    <meta property="og:image" content="https://uiuc-food-waste-awareness.vercel.app/og-image.jpg">
+    <meta property="og:url" content="https://uiuc-food-waste-awareness.vercel.app">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Stop Food Waste at UIUC">
     <meta name="twitter:description" content="Learn how UIUC students can reduce food waste in dining halls and make a positive impact.">
+    <meta name="twitter:image" content="https://uiuc-food-waste-awareness.vercel.app/og-image.jpg">
     
     <title>Stop Food Waste at UIUC | Dining Hall Sustainability</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2313294B'/><circle cx='50' cy='50' r='30' fill='%23E84A27'/></svg>">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Hero Section -->
     <header class="hero" role="banner">
         <div class="hero-content">
             <h1>Stop Food Waste at UIUC</h1>
             <p class="hero-subtitle">Every year, college dining halls waste millions of pounds of food. At UIUC, we can make a difference. Small changes in how we approach meals can reduce waste, save resources, and protect our environment. Your choices matter.</p>
+            <a href="#what-you-can-do" class="cta-button" aria-label="Start reducing waste now">
+                Start Reducing Waste
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
             <a href="#why-it-matters" class="scroll-indicator" aria-label="Scroll to learn more">
                 <i class="fas fa-chevron-down" aria-hidden="true"></i>
             </a>
         </div>
     </header>
 
-    <main role="main">
+    <main id="main-content" role="main">
         <!-- Why It Matters Section -->
         <section id="why-it-matters" class="section why-matters" aria-labelledby="why-heading">
             <div class="container">
                 <h2 id="why-heading">Why It Matters</h2>
+                <p class="section-intro">The numbers tell a powerful story. Here's what food waste means for our campus, our country, and our planet.</p>
                 <div class="stats-grid" role="list">
-                    <div class="stat-card" role="listitem">
+                    <div class="stat-card" role="listitem" data-target="73.9">
                         <div class="stat-icon" aria-hidden="true">
                             <i class="fas fa-trash-alt"></i>
                         </div>
-                        <div class="stat-number">40%</div>
-                        <p class="stat-description">of food in the U.S. goes uneaten, with college dining halls contributing significantly to this waste.</p>
+                        <div class="stat-number" data-value="73.9">0</div>
+                        <p class="stat-unit">Million Tons</p>
+                        <p class="stat-description">of surplus food generated in the U.S. in 2023. College dining halls are a significant contributor to this waste.</p>
                     </div>
-                    <div class="stat-card" role="listitem">
-                        <div class="stat-icon" aria-hidden="true">
-                            <i class="fas fa-globe-americas"></i>
-                        </div>
-                        <div class="stat-number">8%</div>
-                        <p class="stat-description">of global greenhouse gas emissions come from food waste. Reducing waste helps fight climate change.</p>
-                    </div>
-                    <div class="stat-card" role="listitem">
-                        <div class="stat-icon" aria-hidden="true">
-                            <i class="fas fa-tint"></i>
-                        </div>
-                        <div class="stat-number">25%</div>
-                        <p class="stat-description">of all freshwater used in the U.S. goes to producing food that never gets eaten.</p>
-                    </div>
-                    <div class="stat-card" role="listitem">
+                    <div class="stat-card" role="listitem" data-target="382">
                         <div class="stat-icon" aria-hidden="true">
                             <i class="fas fa-dollar-sign"></i>
                         </div>
-                        <div class="stat-number">$218B</div>
-                        <p class="stat-description">is the annual cost of food waste in America. Every plate saved helps reduce this economic burden.</p>
+                        <div class="stat-number" data-value="382">$0</div>
+                        <p class="stat-unit">Billion</p>
+                        <p class="stat-description">is the annual value of surplus food in America. Every plate saved helps reduce this economic burden.</p>
+                    </div>
+                    <div class="stat-card" role="listitem" data-target="8">
+                        <div class="stat-icon" aria-hidden="true">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="stat-number" data-value="8">0</div>
+                        <p class="stat-unit">Percent</p>
+                        <p class="stat-description">of global greenhouse gas emissions come from food waste. Reducing waste helps fight climate change.</p>
+                    </div>
+                    <div class="stat-card" role="listitem" data-target="442">
+                        <div class="stat-icon" aria-hidden="true">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="stat-number" data-value="442">0</div>
+                        <p class="stat-unit">Pounds</p>
+                        <p class="stat-description">of surplus food per person annually. At UIUC, we can do better—together.</p>
                     </div>
                 </div>
             </div>
@@ -78,23 +97,32 @@
         <section id="what-works" class="section what-works" aria-labelledby="works-heading">
             <div class="container">
                 <h2 id="works-heading">What Works</h2>
+                <p class="section-intro">Real solutions from universities across the country show that small changes create big impact.</p>
                 <div class="case-studies">
                     <article class="case-study-card fade-in" role="article">
-                        <div class="case-study-image" aria-hidden="true">
-                            <i class="fas fa-utensils" aria-hidden="true"></i>
+                        <div class="case-study-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=600&fit=crop&q=80" alt="College dining hall with students eating" class="case-study-image" loading="lazy">
+                            <div class="percentage-badge">↓ 25-30%</div>
                         </div>
                         <h3>UC San Diego Trayless Dining</h3>
-                        <p>UC San Diego removed trays from their dining halls, leading students to take only what they could carry. This simple change reduced food waste by 30% and saved thousands of gallons of water from tray washing.</p>
+                        <p>UC San Diego removed trays from their dining halls, leading students to take only what they could carry. This simple change reduced food waste by 25-30% per person and saved thousands of gallons of water from reduced tray washing.</p>
+                        <blockquote class="case-study-quote">
+                            "Trayless days saw a 25 to 30 percent reduction in food waste per person. The institutions generated 11,505 fewer pounds of food waste on trayless days."
+                        </blockquote>
                         <div class="case-study-stat">
-                            <strong>30% reduction</strong> in food waste
+                            <strong>25-30% reduction</strong> in food waste per person
                         </div>
                     </article>
                     <article class="case-study-card fade-in" role="article">
-                        <div class="case-study-image" aria-hidden="true">
-                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <div class="case-study-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&h=600&fit=crop&q=80" alt="Food sampling station at dining hall" class="case-study-image" loading="lazy">
+                            <div class="percentage-badge">↓ 25%</div>
                         </div>
                         <h3>Menus of Change Research</h3>
                         <p>The Menus of Change University Research Collaborative found that smaller portion sizes and "sample before you serve" stations significantly reduce waste. Students who try before taking full portions waste 25% less food.</p>
+                        <blockquote class="case-study-quote">
+                            "Students who sample food before taking full portions waste significantly less. This approach empowers students to make informed choices."
+                        </blockquote>
                         <div class="case-study-stat">
                             <strong>25% less waste</strong> with sampling stations
                         </div>
@@ -108,71 +136,183 @@
             <div class="container">
                 <h2 id="action-heading">What You Can Do</h2>
                 <p class="section-intro">Start making a difference today. Check off each action as you try it—your progress is saved automatically.</p>
-                <div class="checklist" role="list">
-                    <label class="checklist-item fade-in" role="listitem">
-                        <input type="checkbox" class="action-checkbox" data-action="portion">
-                        <span class="checkmark" aria-hidden="true"></span>
-                        <span class="checklist-icon" aria-hidden="true">
-                            <i class="fas fa-utensils"></i>
-                        </span>
-                        <span class="checklist-text">Eat smaller portions—you can always go back for more</span>
-                    </label>
-                    <label class="checklist-item fade-in" role="listitem">
-                        <input type="checkbox" class="action-checkbox" data-action="sample">
-                        <span class="checkmark" aria-hidden="true"></span>
-                        <span class="checklist-icon" aria-hidden="true">
-                            <i class="fas fa-hand-pointer"></i>
-                        </span>
-                        <span class="checklist-text">Sample food before you take a full serving</span>
-                    </label>
-                    <label class="checklist-item fade-in" role="listitem">
-                        <input type="checkbox" class="action-checkbox" data-action="trayless">
-                        <span class="checkmark" aria-hidden="true"></span>
-                        <span class="checklist-icon" aria-hidden="true">
-                            <i class="fas fa-tray"></i>
-                        </span>
-                        <span class="checklist-text">Use trayless dining when possible</span>
-                    </label>
-                    <label class="checklist-item fade-in" role="listitem">
-                        <input type="checkbox" class="action-checkbox" data-action="only-what-you-eat">
-                        <span class="checkmark" aria-hidden="true"></span>
-                        <span class="checklist-icon" aria-hidden="true">
-                            <i class="fas fa-check-circle"></i>
-                        </span>
-                        <span class="checklist-text">Take only what you'll actually eat</span>
-                    </label>
-                    <label class="checklist-item fade-in" role="listitem">
-                        <input type="checkbox" class="action-checkbox" data-action="share">
-                        <span class="checkmark" aria-hidden="true"></span>
-                        <span class="checklist-icon" aria-hidden="true">
-                            <i class="fas fa-users"></i>
-                        </span>
-                        <span class="checklist-text">Share larger portions with friends</span>
-                    </label>
-                    <label class="checklist-item fade-in" role="listitem">
-                        <input type="checkbox" class="action-checkbox" data-action="plan">
-                        <span class="checkmark" aria-hidden="true"></span>
-                        <span class="checklist-icon" aria-hidden="true">
-                            <i class="fas fa-calendar-alt"></i>
-                        </span>
-                        <span class="checklist-text">Plan your meals and avoid overfilling your plate</span>
-                    </label>
-                    <label class="checklist-item fade-in" role="listitem">
-                        <input type="checkbox" class="action-checkbox" data-action="leftovers">
-                        <span class="checkmark" aria-hidden="true"></span>
-                        <span class="checklist-icon" aria-hidden="true">
-                            <i class="fas fa-box"></i>
-                        </span>
-                        <span class="checklist-text">Take leftovers if available and you'll eat them</span>
-                    </label>
-                    <label class="checklist-item fade-in" role="listitem">
-                        <input type="checkbox" class="action-checkbox" data-action="feedback">
-                        <span class="checkmark" aria-hidden="true"></span>
-                        <span class="checklist-icon" aria-hidden="true">
-                            <i class="fas fa-comment"></i>
-                        </span>
-                        <span class="checklist-text">Share feedback with dining hall staff about portion sizes</span>
-                    </label>
+                
+                <div class="progress-indicator" role="status" aria-live="polite">
+                    <span class="progress-text">You've committed to <span id="progress-count">0</span> of 8 actions!</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="checklist-categories">
+                    <div class="checklist-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            Before You Eat
+                        </h3>
+                        <div class="checklist" role="list">
+                            <label class="checklist-item fade-in" role="listitem">
+                                <input type="checkbox" class="action-checkbox" data-action="plan">
+                                <span class="checkmark" aria-hidden="true"></span>
+                                <span class="checklist-icon" aria-hidden="true">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                                <span class="checklist-text">Plan your meals and avoid overfilling your plate</span>
+                            </label>
+                            <label class="checklist-item fade-in" role="listitem">
+                                <input type="checkbox" class="action-checkbox" data-action="sample">
+                                <span class="checkmark" aria-hidden="true"></span>
+                                <span class="checklist-icon" aria-hidden="true">
+                                    <i class="fas fa-hand-pointer"></i>
+                                </span>
+                                <span class="checklist-text">Sample food before you take a full serving</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-utensils" aria-hidden="true"></i>
+                            While You Eat
+                        </h3>
+                        <div class="checklist" role="list">
+                            <label class="checklist-item fade-in" role="listitem">
+                                <input type="checkbox" class="action-checkbox" data-action="portion">
+                                <span class="checkmark" aria-hidden="true"></span>
+                                <span class="checklist-icon" aria-hidden="true">
+                                    <i class="fas fa-utensils"></i>
+                                </span>
+                                <span class="checklist-text">Eat smaller portions—you can always go back for more</span>
+                            </label>
+                            <label class="checklist-item fade-in" role="listitem">
+                                <input type="checkbox" class="action-checkbox" data-action="trayless">
+                                <span class="checkmark" aria-hidden="true"></span>
+                                <span class="checklist-icon" aria-hidden="true">
+                                    <i class="fas fa-tray"></i>
+                                </span>
+                                <span class="checklist-text">Use trayless dining when possible</span>
+                            </label>
+                            <label class="checklist-item fade-in" role="listitem">
+                                <input type="checkbox" class="action-checkbox" data-action="only-what-you-eat">
+                                <span class="checkmark" aria-hidden="true"></span>
+                                <span class="checklist-icon" aria-hidden="true">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span class="checklist-text">Take only what you'll actually eat</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="checklist-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-check-double" aria-hidden="true"></i>
+                            After You Eat
+                        </h3>
+                        <div class="checklist" role="list">
+                            <label class="checklist-item fade-in" role="listitem">
+                                <input type="checkbox" class="action-checkbox" data-action="share">
+                                <span class="checkmark" aria-hidden="true"></span>
+                                <span class="checklist-icon" aria-hidden="true">
+                                    <i class="fas fa-users"></i>
+                                </span>
+                                <span class="checklist-text">Share larger portions with friends</span>
+                            </label>
+                            <label class="checklist-item fade-in" role="listitem">
+                                <input type="checkbox" class="action-checkbox" data-action="leftovers">
+                                <span class="checkmark" aria-hidden="true"></span>
+                                <span class="checklist-icon" aria-hidden="true">
+                                    <i class="fas fa-box"></i>
+                                </span>
+                                <span class="checklist-text">Take leftovers if available and you'll eat them</span>
+                            </label>
+                            <label class="checklist-item fade-in" role="listitem">
+                                <input type="checkbox" class="action-checkbox" data-action="feedback">
+                                <span class="checkmark" aria-hidden="true"></span>
+                                <span class="checklist-icon" aria-hidden="true">
+                                    <i class="fas fa-comment"></i>
+                                </span>
+                                <span class="checklist-text">Share feedback with dining hall staff about portion sizes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="share-commitment">
+                    <button type="button" class="share-button" id="share-button" aria-label="Share your commitment to reducing food waste">
+                        <i class="fas fa-share-alt" aria-hidden="true"></i>
+                        Share Your Commitment
+                    </button>
+                    <div class="celebration-message" id="celebration-message" role="alert" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved Section -->
+        <section id="get-involved" class="section get-involved-section" aria-labelledby="involved-heading">
+            <div class="container">
+                <h2 id="involved-heading">Get Involved</h2>
+                <p class="section-intro">Your voice matters. Help shape the future of sustainable dining at UIUC.</p>
+                
+                <div class="involved-content">
+                    <div class="involved-card">
+                        <div class="involved-icon">
+                            <i class="fas fa-comments" aria-hidden="true"></i>
+                        </div>
+                        <h3>Share Your Feedback</h3>
+                        <p>Have ideas about reducing food waste? Illinois Dining wants to hear from you.</p>
+                        <a href="https://dining.illinois.edu/feedback" class="involved-button" target="_blank" rel="noopener noreferrer" aria-label="Visit Illinois Dining feedback form (opens in new tab)">
+                            Submit Feedback
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="involved-card">
+                        <div class="involved-icon">
+                            <i class="fas fa-qrcode" aria-hidden="true"></i>
+                        </div>
+                        <h3>Share This Site</h3>
+                        <p>Scan this QR code to share this resource with friends and classmates.</p>
+                        <div class="qr-code-wrapper">
+                            <canvas id="qr-code" width="200" height="200" aria-label="QR code to share this website"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="involved-card">
+                        <div class="involved-icon">
+                            <i class="fas fa-share-nodes" aria-hidden="true"></i>
+                        </div>
+                        <h3>Spread the Word</h3>
+                        <p>Share this page on social media to help raise awareness.</p>
+                        <div class="social-share-buttons" role="list">
+                            <a href="https://twitter.com/intent/tweet?text=Stop%20Food%20Waste%20at%20UIUC&url=https://uiuc-food-waste-awareness.vercel.app" 
+                               class="social-share-button" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               aria-label="Share on Twitter (opens in new tab)"
+                               role="listitem">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                Twitter
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://uiuc-food-waste-awareness.vercel.app" 
+                               class="social-share-button" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               aria-label="Share on Facebook (opens in new tab)"
+                               role="listitem">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                Facebook
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://uiuc-food-waste-awareness.vercel.app" 
+                               class="social-share-button" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               aria-label="Share on LinkedIn (opens in new tab)"
+                               role="listitem">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -192,22 +332,12 @@
                 </div>
                 <div class="footer-section">
                     <h3>Resources</h3>
-                    <p>Learn more about food waste reduction and sustainability initiatives.</p>
+                    <p>Learn more about food waste reduction and sustainability initiatives at UIUC and beyond.</p>
+                    <p class="footer-note">Data sources: ReFED 2024 Food Waste Report, UC San Diego Trayless Dining Study, Menus of Change University Research Collaborative</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 UIUC Food Waste Awareness. Built to inspire change.</p>
-                <div class="social-icons" role="list">
-                    <a href="#" class="social-icon" aria-label="Facebook (opens in new tab)" role="listitem" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="Twitter (opens in new tab)" role="listitem" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="Instagram (opens in new tab)" role="listitem" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </footer>
@@ -215,4 +345,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

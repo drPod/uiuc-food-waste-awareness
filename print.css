@@ -1,0 +1,114 @@
+/* ============================================
+   Print Stylesheet
+   ============================================ */
+
+@media print {
+    /* Hide non-essential elements */
+    .skip-link,
+    .scroll-indicator,
+    .cta-button,
+    .share-button,
+    .social-share-buttons,
+    .qr-code-wrapper,
+    .footer {
+        display: none !important;
+    }
+
+    /* Reset colors for printing */
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    /* Page setup */
+    @page {
+        margin: 2cm;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 24pt;
+        page-break-after: avoid;
+        color: black !important;
+    }
+
+    h2 {
+        font-size: 18pt;
+        page-break-after: avoid;
+        color: black !important;
+    }
+
+    h3 {
+        font-size: 14pt;
+        page-break-after: avoid;
+        color: black !important;
+    }
+
+    /* Sections */
+    .section {
+        page-break-inside: avoid;
+        padding: 1rem 0;
+    }
+
+    /* Stats and cards */
+    .stat-card,
+    .case-study-card,
+    .checklist-item {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    /* Links */
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+        page-break-inside: avoid;
+    }
+
+    /* Checklist */
+    .checklist-item {
+        border-bottom: 1px solid #eee;
+    }
+
+    .action-checkbox:checked ~ .checklist-text::before {
+        content: "✓ ";
+    }
+
+    /* Progress indicator */
+    .progress-indicator {
+        border: 1px solid #ccc;
+        padding: 0.5rem;
+    }
+
+    .progress-bar {
+        border: 1px solid #ccc;
+    }
+
+    /* Avoid breaking */
+    .stat-card,
+    .case-study-card,
+    .checklist-category {
+        page-break-inside: avoid;
+    }
+}
+
