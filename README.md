@@ -4,7 +4,17 @@ A single-page website designed to raise awareness among UIUC students about redu
 
 ## 🌐 Live Site
 
-**Deployment URL:** [Coming soon - will be updated after Vercel deployment]
+**Deployment URL:** [Connect this GitHub repo to Vercel for automatic deployment]
+
+**GitHub Repository:** https://github.com/drPod/uiuc-food-waste-awareness
+
+### Quick Deploy to Vercel
+
+1. Go to [vercel.com](https://vercel.com) and sign in
+2. Click "Add New Project"
+3. Import the GitHub repository: `drPod/uiuc-food-waste-awareness`
+4. Vercel will automatically detect it's a static site and deploy
+5. Your site will be live at a `*.vercel.app` URL
 
 ## 📋 Features
 
